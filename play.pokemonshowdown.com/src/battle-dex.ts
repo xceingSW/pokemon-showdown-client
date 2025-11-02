@@ -49,7 +49,7 @@ function buildFileName(skylandername: string, imageType: "Transparent_Render" | 
 		if(skylandername == "Wham-Shell") return "Portrait_wham_shell_ssf.png"
 		if(skylandername == "Dino-Rang") return "Portrait_ssf_dino_rang.png"
 		if(skylandername == "Lightning_Rod") return "Portrait_lightning_rod_ssf.png"
-		if(skylandername == "Wirlwind") return "Portrait_whirlwind_ssf.png"
+		if(skylandername == "Whirlwind") return "Portrait_whirlwind_ssf.png"
 		if(skylandername == "Warnado") return "Portrait_warnado_ssf.png"
 		if(skylandername == "Sonic_Boom") return "Portrait_sonic_boom_ssf.png"
 		if(skylandername == "Hex") return "Portrait_hex_ssf.png"		
