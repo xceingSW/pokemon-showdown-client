@@ -875,7 +875,7 @@ export class BattleScene implements BattleSceneStub {
 					x = 48 + 180 + 50 * (i + 6 - side.pokemon.length);
 				} else {
 					y = 48 + 200 + 3 * i;
-					x = 48 + 100 + 50 * i;
+					x = 48 + 100 + 60 * i;
 				}
 				if (textBuf) textBuf += ' / ';
 				textBuf += pokemon.speciesForme;
