@@ -811,7 +811,7 @@ export const Dex = new class implements ModdedDex {
 			const urls = isFront ? buildUrl(skylandername, "Transparent_Render") : buildUrl(skylandername, "Portrait_ssf_");
 			return {
 				gen: 6,
-				w: 96,
+				w: skylandername == "Wrecking Ball" ? 96 : 96,
 				h: 96,
 				y: 0,
 				url: urls + "?" + skylandername,

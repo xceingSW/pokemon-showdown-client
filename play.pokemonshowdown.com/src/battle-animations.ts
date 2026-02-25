@@ -867,7 +867,7 @@ export class BattleScene implements BattleSceneStub {
 					gen: this.gen,
 					noScale: true,
 					mod: this.mod,
-				});
+				}); // skylander preview
 				let y = 0;
 				let x = 0;
 				if (spriteIndex) {
@@ -881,7 +881,7 @@ export class BattleScene implements BattleSceneStub {
 				textBuf += pokemon.speciesForme;
 				let url = spriteData.url;
 				// if (this.paused) url.replace('/xyani', '/xy').replace('.gif', '.png');
-				buf += `<img src="${url}" width="${spriteData.w}" height="${spriteData.h}" style="position:absolute;top:${Math.floor(y - spriteData.h / 2)}px;left:${Math.floor(x - spriteData.w / 2)}px" />`;
+				buf += `<img src="${url}" width="${spriteData.w}" height="${spriteData.h}" style="${ !spriteData.isFrontSprite ? "transform: rotate(-15deg)": pokemon.name == "Wrecking Ball" ? "transform: scaleX(-1)":""};position:absolute;top:${Math.floor(y - spriteData.h / 2)}px;left:${pokemon.name == "Wrecking Ball" ? Math.floor(x - spriteData.w / 2) + (spriteData.isFrontSprite ? -10 : 25) : Math.floor(x - spriteData.w / 2)}px" />`;
 				buf2 += `<div style="position:absolute;top:${y + 45}px;left:${x - 40}px;width:80px;font-size:10px;text-align:center;color:#FFF;">`;
 				const gender = pokemon.gender;
 				if (gender === 'M' || gender === 'F') {
